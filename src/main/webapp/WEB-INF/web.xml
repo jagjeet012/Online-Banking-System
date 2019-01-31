@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name></display-name>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>RedirectHandlerr</servlet-name>
+		<servlet-class>org.jagjeet.bankingsystem.controller.RedirectHandlerr</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RedirectHandlerr</servlet-name>
+		<url-pattern>/login</url-pattern>
+		<url-pattern>/logout</url-pattern>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>org.jagjeet.bankingsystem.controller.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Logout</servlet-name>
+		<servlet-class>org.jagjeet.bankingsystem.controller.Logout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/Logout</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>AddDetails</servlet-name>
+		<servlet-class>org.jagjeet.bankingsystem.controller.AddDetails</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddDetails</servlet-name>
+		<url-pattern>/AddDetails</url-pattern>
+		<url-pattern>/addAccount</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RemoveDetails</servlet-name>
+		<servlet-class>org.jagjeet.bankingsystem.controller.RemoveDetails</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RemoveDetails</servlet-name>
+		<url-pattern>/RemoveDetails</url-pattern>
+		<url-pattern>/removeAccount</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetDetails</servlet-name>
+		<servlet-class>org.jagjeet.bankingsystem.controller.GetDetails</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetDetails</servlet-name>
+		<url-pattern>/GetDetails</url-pattern>
+		<url-pattern>/balance</url-pattern>
+		<url-pattern>/deposit</url-pattern>
+		<url-pattern>/transfer</url-pattern>
+		<url-pattern>/withdraw</url-pattern>
+	</servlet-mapping>
+
+</web-app>
